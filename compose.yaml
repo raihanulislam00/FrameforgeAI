@@ -1,0 +1,7 @@
+﻿services:
+  ai video makeraivideomaker:
+    image: ai video makeraivideomaker
+    build:
+      context: .
+      dockerfile: AI Video Maker/Dockerfile
+

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/VideoMaker.API/VideoMaker.API.csproj" />
+    <Project Path="src/VideoMaker.Application/VideoMaker.Application.csproj" />
+    <Project Path="src/VideoMaker.Contracts/VideoMaker.Contracts.csproj" />
+    <Project Path="src/VideoMaker.Domain/VideoMaker.Domain.csproj" />
+    <Project Path="src/VideoMaker.Infrastructure/VideoMaker.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/VideoMaker.Tests/VideoMaker.Tests.csproj" />
+  </Folder>
+</Solution>

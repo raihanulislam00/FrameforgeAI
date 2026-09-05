@@ -1,0 +1,8 @@
+import './styles.css';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = { title: 'Frameforge AI', description: 'AI video production workspace' };
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body>{children}</body></html>;
+}
