@@ -1,0 +1,6 @@
+@AI_Video_Maker_HostAddress = http://localhost:5020
+
+GET {{AI_Video_Maker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
