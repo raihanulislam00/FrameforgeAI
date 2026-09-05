@@ -105,17 +105,13 @@ public class VideoMakerDbContext : DbContext
             .HasForeignKey(vs => vs.VideoId)
             .OnDelete(DeleteBehavior.Cascade);
 
-        modelBuilder.Entity<VideoScene>()
-            .Property(vs => vs.CreatedAt)
-            .HasDefaultValueSql("CURRENT_TIMESTAMP");
-
         // VideoGenerationJob configuration
         modelBuilder.Entity<VideoGenerationJob>()
             .HasKey(vgj => vgj.Id);
 
         modelBuilder.Entity<VideoGenerationJob>()
             .HasOne(vgj => vgj.Video)
-            .WithMany(v => v.GenerationJobs)
+            .WithMany(v => v.Jobs)
             .HasForeignKey(vgj => vgj.VideoId)
             .OnDelete(DeleteBehavior.Cascade);
 
